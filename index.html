@@ -396,6 +396,20 @@
 <br>
 <b>=================================================================</b>
 </ul>
+<script>
+    var colors = ["red", "blue", "green", "black"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+    <body id='body'>
+    <button onclick="changeColor();">Change color</button>
   <embed name="GoodEnough" src="manase.mp3" loop="true" hidden="true" autostart="true">
 </body>
 </html> 
